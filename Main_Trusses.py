@@ -71,4 +71,4 @@ def PlaneTrussStiffness( input_geometry):
 
 
 # Run the plane truss function 
-[nodes,bars]=PlaneTrussStiffness('J:\Structural Analysis\Project 4\project_4_code\Modified_Gabled_Pratt_Six_Panel.csv')
+[nodes,bars]=PlaneTrussStiffness('Modified_Gabled_Pratt_Six_Panel.csv')
