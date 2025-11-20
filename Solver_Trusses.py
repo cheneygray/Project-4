@@ -65,11 +65,10 @@ def ComputeNormalStresses(bars):
     # COMPLETE THIS FUNCTION
     # Compute normal stress for all bars
     for bar in bars:
-        P=bar.axial_force
-        A=bar.A
-        sigma=P/A
-        bar.normal_stress=sigma
-    return bars
+        sigma = bar.axial_force/bar.A
+        bar.normal_stress = sigma
+        bar.is_comuted = True
+    pass
 
 # compute the critical buckling load of a member
 def ComputeBucklingLoad(bars):
