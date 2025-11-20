@@ -61,11 +61,11 @@ def PlaneTrussStiffness( input_geometry):
         bar.Print()
     
     # Uncomment these for plotting
-    # Plotting_Trusses.PlotStructureData(nodes, bars, "index")
-    # Plotting_Trusses.PlotStructureData(nodes, bars, "axial")
-    # Plotting_Trusses.PlotStructureData(nodes, bars, "stress")
+    Plotting_Trusses.PlotStructureData(nodes, bars, "index")
+    Plotting_Trusses.PlotStructureData(nodes, bars, "axial")
+    Plotting_Trusses.PlotStructureData(nodes, bars, "stress")
     Plotting_Trusses.PlotStructureData(nodes, bars, "disp_in")
-    #Plotting_Trusses.PlotStructureData(nodes, bars, "buckling")
+    Plotting_Trusses.PlotStructureData(nodes, bars, "buckling")
     
     return [nodes,bars]
 
